@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  color: $color-tuatara;
+}
+
+a {
+  color: $color-cinnabar;
+
+  &:hover {
+    color: #3f3d3a;
+  }
+}
+
+p {
+  margin-bottom: 0.15em;
+}
+
+.archives,
+.resources {
+  display: none;
+}

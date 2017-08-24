@@ -1,0 +1,100 @@
+.intro {
+  padding-top: 2em;
+
+  @media (min-width: $screen-sm) {
+    padding-top: 7em;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-top: 8em;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 9em;
+  }
+
+  p {
+    margin: 0 auto 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    @media (min-width: $screen-sm) {
+      font-size: 5.25em;
+      margin: 0 auto;
+    }
+
+    &::before {
+      background-size: 25rem;
+      background: url('../images/img-sprite.png') no-repeat center 0.25em;
+      content: 'Dr. Shea\2019s Miraculous';
+      display: block;
+      font-family: $font-second;
+      font-size: 1.12rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1.3em;
+      text-transform: uppercase;
+    }
+  }
+
+  h2 {
+    font-family: $font-third;
+    font-size: 2.25em;
+    font-weight: 400;
+    padding-top: 4.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0em;
+    letter-spacing: 0.05rem;
+    line-height: 1.275em;
+    background: url('../images/img-bottle.png') no-repeat center 0.75em;
+    background-size: 1.45em;
+  }
+
+  .summary {
+    p:nth-child(2) {
+      font-style: italic;
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  .preamble {
+    margin: 0 auto 1em;
+
+    p {
+      margin-bottom: 0.15em;
+
+      &::first-line {
+        text-transform: uppercase;
+      }
+
+      &:nth-child(1n+3) {
+        text-indent: 1.5em;
+
+        &::first-line {
+          text-transform: none;
+        }
+      }
+    }
+
+    h3 {
+      background-size: 13em;
+      background: url('../images/img-lg-horiz-border.png') repeat-x top right, url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+      font-family: $font-third;
+      font-size: 1.5em;
+      line-height: 1;
+      margin:  0.5em auto 0.55em;
+      padding: 0.5em 0 0.55em;
+    }
+  }
+}

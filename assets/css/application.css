@@ -1,0 +1,314 @@
+/* Color Palette *//* Font Family *//* Media Breakpoints *//* Styles *//* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}/* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+blockquote,q {
+  quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background: #faf3e6;
+  background-size: 22em;
+  overflow-y: auto;
+}
+
+body {
+  color: #3f3d3a;
+  overflow: hidden;
+}
+
+body::after,body::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+body::before {
+  border-left: 45px solid #faf3e6;
+  border-right: 45px solid #faf3e6;
+  border-top: 45px solid transparent;
+  background: #f7644d url("../images/img-halftone.png") repeat;
+  margin: 0 auto -45px;
+}
+
+body::after {
+  border-left: 7em solid #faf3e6;
+  border-right: 7em solid #faf3e6;
+  border-bottom: 10em solid transparent;
+  background: #ffb14d url("../images/img-halftone.png") repeat;
+  margin: -10em auto 0;
+}
+
+.design-selection {
+  margin: 0 auto;
+}
+
+.design-selection h3 {
+  background-size: 15em;
+  background: url("../images/img-lg-horiz-border.png") repeat-x top right, url("../images/img-lg-horiz-border.png") repeat-x bottom left;
+  font-family: inherit;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0.35em auto 0.75em;
+  padding: 0.5em 0;
+}
+
+.design-selection ul {
+  overflow-x: hidden;
+}
+
+.design-selection li {
+  color: transparent;
+  margin-bottom: 0.28em;
+}
+
+.design-selection li a {
+  color: #3f3d3a;
+  text-decoration: none;
+}
+
+.design-selection li a:hover {
+  color: #e5452c;
+}
+
+.design-selection .design-name {
+  background: #faf3e6;
+  font-style: italic;
+  padding-right: 0.25em;
+}
+
+.design-selection .design-name::after {
+  color: #3f3d3a;
+  content: ".....................................................................................................................";
+  float: left;
+  white-space: nowrap;
+  width: 0;
+}
+
+.design-selection .designer-name {
+  background: #faf3e6;
+  float: right;
+  font-family: inherit;
+  font-size: 1em;
+  padding-left: 0.25em;
+  text-transform: uppercase;
+}
+
+.intro {
+  padding-top: 2em;
+}
+
+.intro p {
+  margin: 0 auto 1em;
+}
+
+.intro h1 {
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.intro h1::before {
+  background-size: 25rem;
+  background: url("../images/img-sprite.png") no-repeat center 0.25em;
+  content: 'Dr. Shea\2019s Miraculous';
+  display: block;
+  font-family: inherit;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.3em;
+  text-transform: uppercase;
+}
+
+.intro h2 {
+  font-family: inherit;
+  font-size: 2.25em;
+  font-weight: 400;
+  padding-top: 4.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+  letter-spacing: 0.05rem;
+  line-height: 1.275em;
+  background: url("../images/img-bottle.png") no-repeat center 0.75em;
+  background-size: 1.45em;
+}
+
+.intro .summary p:nth-child(2) {
+  font-style: italic;
+}
+
+.intro .summary a {
+  display: inline-block;
+}
+
+.intro .preamble {
+  margin: 0 auto 1em;
+}
+
+.intro .preamble p {
+  margin-bottom: 0.15em;
+}
+
+.intro .preamble p::first-line {
+  text-transform: uppercase;
+}
+
+.intro .preamble p:nth-child(1n+3) {
+  text-indent: 1.5em;
+}
+
+.intro .preamble p:nth-child(1n+3)::first-line {
+  text-transform: none;
+}
+
+.intro .preamble h3 {
+  background-size: 13em;
+  background: url("../images/img-lg-horiz-border.png") repeat-x top right, url("../images/img-lg-horiz-border.png") repeat-x bottom left;
+  font-family: inherit;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0.5em auto 0.55em;
+  padding: 0.5em 0 0.55em;
+}
+
+.page-wrapper {
+  margin: 0.25em auto;
+  max-width: 1800px;
+  padding: 0 4%;
+  position: relative;
+  width: 100%;
+}
+
+.page-wrapper::after {
+  content: '';
+  display: table;
+}
+
+.page-wrapper::before {
+  background-size: 40em;
+  background: url("../images/img-lg-horiz-border.png") repeat-x 0 -2px;
+  content: '';
+  display: block;
+  height: 20px;
+}
+
+.sidebar a:hover {
+  color: #e5452c;
+}
+
+.sidebar .design-archives {
+  margin: 0.8em auto;
+  position: relative;
+}
+
+.sidebar .design-archives ul {
+  background: url("../images/img-lg-horiz-border.png") repeat-x top right, url("../images/img-lg-horiz-border.png") repeat-x bottom left;
+  background-size: 36em;
+  padding: 1.25em 0;
+}
+
+.sidebar .design-archives .viewall {
+  font-size: 1.125em;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sidebar .design-archives .next > a {
+  background-size: 20em;
+  background: url("../images/img-sprite.png") no-repeat bottom right;
+  color: #3f3d3a;
+  height: 1.25em;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-indent: -9999px;
+  white-space: nowrap;
+  width: 2em;
+}
+
+.sidebar .design-archives .next > a:hover {
+  margin-right: -4px;
+}
+
+h1,h2,h3,h4,h5 {
+  text-align: center;
+  color: #272625;
+}
+
+a {
+  color: #e5452c;
+}
+
+a:hover {
+  color: #3f3d3a;
+}
+
+p {
+  margin-bottom: 0.15em;
+}
+
+.archives,.resources {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    padding-top: 7em;
+  }
+
+  .intro h1 {
+    font-size: 5.25em;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .intro {
+    padding-top: 8em;
+  }
+}
+
+@media (min-width: 1050px) {
+  .intro {
+    padding-top: 9em;
+  }
+}

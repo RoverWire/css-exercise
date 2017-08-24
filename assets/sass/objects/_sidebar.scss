@@ -1,0 +1,42 @@
+.sidebar {
+  a:hover {
+    color: $color-cinnabar;
+  }
+
+  .design-archives {
+    margin: 0.8em auto;
+    position: relative;
+
+    ul {
+      background: url('../images/img-lg-horiz-border.png') repeat-x top right, url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+      background-size: 36em;
+      padding: 1.25em 0;
+    }
+
+    .viewall {
+      font-size: 1.125em;
+      font-style: italic;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .next > a {
+      background-size: 20em;
+      background: url('../images/img-sprite.png') no-repeat bottom right;
+      color: $color-merlin;
+      height: 1.25em;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      text-decoration: none;
+      text-indent: -9999px;
+      white-space: nowrap;
+      width: 2em;
+
+      &:hover {
+        margin-right: -4px;
+      }
+    }
+  }
+}

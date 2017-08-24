@@ -1,0 +1,34 @@
+html {
+  background: $color-linen;
+  background-size: 22em;
+  overflow-y: auto;
+}
+
+body {
+  color: $color-merlin;
+  overflow: hidden;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &::before {
+    border-left: 45px solid $color-linen;
+    border-right: 45px solid $color-linen;
+    border-top: 45px solid transparent;
+    background: $color-carnation url('../images/img-halftone.png') repeat;
+    margin: 0 auto -45px;
+  }
+
+  &::after {
+    border-left: 7em solid $color-linen;
+    border-right: 7em solid $color-linen;
+    border-bottom: 10em solid transparent;
+    background: $color-texas-rose url('../images/img-halftone.png') repeat;
+    margin: -10em auto 0;
+  }
+}

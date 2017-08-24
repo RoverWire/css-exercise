@@ -1,0 +1,22 @@
+/* Color Palette */
+$color-carnation: #f7644d;
+$color-cinnabar: #e5452c;
+$color-linen: #faf3e6;
+$color-merlin: #3f3d3a;
+$color-texas-rose: #ffb14d;
+$color-tuatara: #272625;
+
+/* Font Family */
+$font-first: inherit; //"refrigerator-deluxe",sans-serif
+$font-second: inherit; //"french-clarendon-ornamented",sans-serif
+$font-third: inherit; //"grecian-light-face",sans-serif;
+
+/* Media Breakpoints */
+$screen-sm: 600px;
+$screen-md: 800px;
+$screen-lg: 1050px;
+
+/* Styles */
+
+@import 'vendors/*';
+@import 'objects/*';
