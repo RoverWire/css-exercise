@@ -12,9 +12,20 @@ module.exports = function(grunt) {
       }
     },
     sass: {
-      dist: {
+      dev: {
         options: {
           style: 'expanded',
+          sourcemap: 'none',
+          require: 'sass-globbing',
+          noCache: true
+        },
+        files: {
+          'assets/css/application.css':'assets/sass/application.scss'
+        }
+      },
+      dist: {
+        options: {
+          style: 'compressed',
           sourcemap: 'none',
           require: 'sass-globbing',
           noCache: true
@@ -27,7 +38,7 @@ module.exports = function(grunt) {
     watch: {
       styles: {
         files: 'assets/sass/**/*.scss',
-        tasks: ['sass'],
+        tasks: ['sass:dev'],
         options: {
           spawn: false,
           livereload: true
@@ -35,9 +46,12 @@ module.exports = function(grunt) {
       }
     },
     combine_mq: {
-      default_options: {
-        expand: true,
-        src: 'assets/css/application.css'
+      default: {
+        options: {
+          beautify: false
+        },
+        src: 'assets/css/application.css',
+        dest: 'assets/css/application.css'
       }
     }
   });
@@ -48,5 +62,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-combine-mq');
 
   grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('build', ['sass', 'combine_mq']);
+  grunt.registerTask('build', ['sass:dist', 'combine_mq']);
 }
